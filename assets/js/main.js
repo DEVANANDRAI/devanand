@@ -275,6 +275,11 @@ function resetBackground(){
   services.style.backgroundColor="";
   stats.style.backgroundColor="";
   footer.style.backgroundColor=""
+  formb.style.backgroundColor="";
+  formc.style.background="";
+  formc.style.color="";
+  formf.style.background="";
+  formf.style.color="";
 }
 function changeColor() {
  if(modeText.innerHTML=="DarkMode Enable"){
