@@ -227,3 +227,57 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+const btn=document.getElementById("setColor");
+const modeText= document.getElementById("modeText");
+const about=document.getElementById("about");
+const contact=document.getElementById("contact");
+const skills=document.getElementById("skills");
+const resume=document.getElementById("resume");
+const services=document.getElementById("services"); 
+const stats=document.getElementById("stats"); 
+function setBackground(){
+  about.style.color="white";
+  // contact.style.color="white";
+  skills.style.color="white";
+  resume.style.color="white";
+  services.style.color="white";
+  footer.style.color="white";
+  stats.style.color="black";
+  about.style.backgroundColor="#706e6e";
+  contact.style.backgroundColor="#706e6e";
+  skills.style.backgroundColor="#706e6e";
+  resume.style.backgroundColor="#706e6e";
+  services.style.backgroundColor="#706e6e";
+  stats.style.backgroundColor="#706e6e";
+  footer.style.backgroundColor="#393e42"; 
+
+}
+function resetBackground(){
+  about.style.color="";
+  // contact.style.color="white";
+  skills.style.color="";
+  resume.style.color="";
+  services.style.color="";
+  footer.style.color="";
+  stats.style.color="";
+  about.style.backgroundColor="";
+  contact.style.backgroundColor="";
+  skills.style.backgroundColor="";
+  resume.style.backgroundColor="";
+  services.style.backgroundColor="";
+  stats.style.backgroundColor="";
+  footer.style.backgroundColor=""
+}
+function changeColor() {
+ if(modeText.innerHTML=="DarkMode Enable"){
+  setBackground();
+  modeText.innerHTML="DarkMode Disable";
+  modeText.style.color="black"; 
+ }
+ else{
+  modeText.innerHTML="DarkMode Enable"
+  modeText.style.color="white"; 
+  resetBackground();
+ }
+}
+btn.addEventListener("click",changeColor)
