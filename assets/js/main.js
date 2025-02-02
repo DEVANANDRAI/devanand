@@ -234,7 +234,10 @@ const contact=document.getElementById("contact");
 const skills=document.getElementById("skills");
 const resume=document.getElementById("resume");
 const services=document.getElementById("services"); 
-const stats=document.getElementById("stats"); 
+const stats=document.getElementById("stats");  
+const formb=document.getElementById("formb");
+const formc=document.getElementById("formc");
+const formf=document.getElementById("formf");
 function setBackground(){
   about.style.color="white";
   // contact.style.color="white";
@@ -243,6 +246,11 @@ function setBackground(){
   services.style.color="white";
   footer.style.color="white";
   stats.style.color="black";
+  formb.style.backgroundColor="radial-gradient(#b2002e,rgba(57, 7, 194, 0))";
+  formc.style.background="radial-gradient(#252121, transparent)";
+  formc.style.color="cornsilk";
+  formf.style.background="radial-gradient(#cfa0a0, transparent)";
+  formf.style.color="azure";
   about.style.backgroundColor="#706e6e";
   contact.style.backgroundColor="#706e6e";
   skills.style.backgroundColor="#706e6e";
